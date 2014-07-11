@@ -4,9 +4,10 @@ get '/' do
 end
 
 post '/result' do
-  installment = params[:installment].to_i
+	principal = params[:principal].to_i
+  contribution = params[:contribution].to_i
   rate =  params[:rate].to_i
   years = params[:years].to_i
-  result = ( installment * ( ( (rate/100.0) + 1)**years )/((rate/100.0)) )
+  result = ( principal * (rate/100.0 + 1)**years ) + ( contribution * ( ( (rate/100.0) + 1)**years )/((rate/100.0)) )
   "The Portfolio will be worth: $" + result.floor.to_s.gsub(/(\d)(?=(\d\d\d)+(?!\d))/, "\\1,")
 end
