@@ -9,7 +9,7 @@ html {
 }
 
 header {
-  padding: 10px;
+  padding: 1em;
   background-color: green;
   color: white;
 }
@@ -41,10 +41,9 @@ nav li a{
 
 
 .container {
-    margin: 20px auto;
+    margin: 2em auto;
     width: 80%;
-    padding: 20px;
-    border: 1px dotted black;
+    padding: 2em;
     background-color: green;
     text-align: center;
     background:linear-gradient(135deg, #2d7c00, #b4e388);
@@ -60,4 +59,8 @@ div h2 {
 
 footer {
 	text-align: center;
+}
+
+input {
+  width: 30%;
 }

@@ -1,13 +1,5 @@
 <html>
 
-<head>
-	<link rel="stylesheet" href="http://cdn.jsdelivr.net/normalize/2.1.0/normalize.css">
-	<link rel="stylesheet" href="main.css">
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,900">
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome.min.css">
-</head>
-
 <body>
 	<header>
 		<span class="brand"><a href="/">401(k) Calculator</a></span>
@@ -25,9 +17,9 @@
 	<div class="container">
 		<h2>What will your retirement accounts be worth?</h2>
 		<form action="/result" method="post">
-			<p>How much do you have saved so far?</p><input type="text" name="principal" placeholder= "Enter Amount Without $ Sign"><br>
+			<p>How much do you have saved so far?</p><input type="text" name="principal" placeholder= "Without $ Sign"><br>
 
-			<p>How much do you contribute per year including employer's match?</p><input type="text" name="contribution" placeholder= "Enter Amount Without $ Sign"><br>
+			<p>How much do you contribute per year including employer's match?</p><input type="text" name="contribution" placeholder= "Without $ Sign"><br>
 
 			<p>How often do you get paid?</p>
 
@@ -63,7 +55,7 @@
 			  <option value="20">20%</option>
 			</select>
 
-			<p>Years Until Retirement:</p><input type="text" name="years" placeholder= "Enter Number of Years"><br><br>
+			<p>Years Until Retirement:</p><input type="text" name="years" placeholder= "Enter Years"><br><br>
 			<input type="submit" value="Calculate">
 		</form>
 	</div>
