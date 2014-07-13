@@ -1,6 +1,63 @@
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+html {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+  padding: 10px;
+  background-color: green;
+  color: white;
+}
+
+header a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.brand {
+  font-family: "Lato", Verdana, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+nav {
+  float: right;
+}
+
+nav li {
+  display: inline;
+  padding-right: 0.5em
+}
+
+nav li a{
+  font-size: 1.0em;
+}
+
+
 .container {
     margin: 20px auto;
-    width: 600px;
+    width: 80%;
     padding: 20px;
     border: 1px dotted black;
+    background-color: green;
+    text-align: center;
+    background:linear-gradient(135deg, #2d7c00, #b4e388);
   }
+
+div p {
+	color: white;
+}
+
+div h2 {
+	color: white;
+}
+
+footer {
+	text-align: center;
+}

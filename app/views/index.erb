@@ -1,8 +1,76 @@
-<div class="container">
-	<form action="/result" method="post">
-		<input type="text" name="principal" placeholder= "Current Savings"><br>
-		<input type="text" name="contribution" placeholder= "Annual Contribution"><br>
-		<input type="text" name="rate" placeholder= "Annual Rate of Return"><br><input type="text" name="years" placeholder= "Years Invested"><br>
-		<input type="submit" value="Calculate">
-	</form>
-</div>
+<html>
+
+<head>
+	<link rel="stylesheet" href="http://cdn.jsdelivr.net/normalize/2.1.0/normalize.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,900">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+		<span class="brand"><a href="/">401(k) Calculator</a></span>
+		<nav>
+			<ul>
+				<li><a href="http://money.cnn.com/data/etf/">ETFs</a></li>
+				<li><a href="http://money.cnn.com/data/funds/">Mutual Funds</a></li>
+				<li><a href="http://www.lipperleaders.com/">Lipper Leaders</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+
+	<div class="container">
+		<h2>What will your retirement accounts be worth?</h2>
+		<form action="/result" method="post">
+			<p>How much do you have saved so far?</p><input type="text" name="principal" placeholder= "Enter Amount Without $ Sign"><br>
+
+			<p>How much do you contribute per year including employer's match?</p><input type="text" name="contribution" placeholder= "Enter Amount Without $ Sign"><br>
+
+			<p>How often do you get paid?</p>
+
+			<select name = "frequency">
+			  <option value="1">Yearly</option>
+			  <option value="12">Monthly</option>
+			  <option value="26">Bi-Weekly</option>
+			  <option value="52">Weekly</option>
+			</select>
+
+			<p>Annual Rate of Return:</p>
+
+			<select name = "rate">
+			  <option value="1">1%</option>
+			  <option value="2">2%</option>
+			  <option value="3">3%</option>
+			  <option value="4">4%</option>
+			  <option value="5">5%</option>
+			  <option value="6">6%</option>
+			  <option value="7">7%</option>
+			  <option value="8">8%</option>
+			  <option value="9">9%</option>
+			  <option value="10">10%</option>
+			  <option value="11">11%</option>
+			  <option value="12">12%</option>
+			  <option value="13">13%</option>
+			  <option value="14">14%</option>
+			  <option value="15">15%</option>
+			  <option value="16">16%</option>
+			  <option value="17">17%</option>
+			  <option value="18">18%</option>
+			  <option value="19">19%</option>
+			  <option value="20">20%</option>
+			</select>
+
+			<p>Years Until Retirement:</p><input type="text" name="years" placeholder= "Enter Number of Years"><br><br>
+			<input type="submit" value="Calculate">
+		</form>
+	</div>
+
+	<footer>
+		Developed by Vic Schaeperkoetter, 2014
+	</footer>
+</body>
+
+</html>
